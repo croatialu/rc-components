@@ -1,0 +1,57 @@
+.half-star-box {
+  width: 10px;
+  height: 20px;
+  overflow: hidden;
+}
+
+
+.star-event-mask:hover {
+  transform: scale(1.2);
+}
+.star-box {
+  width: 20px;
+  height: 20px;
+}
+
+.pr {
+  position: relative;
+}
+
+.pa {
+  position: absolute;
+}
+
+.l0 {
+  left: 0;
+}
+
+.r0 {
+  right: 0;
+}
+
+.t0 {
+  top: 0;
+}
+.b0 {
+  bottom: 0;
+}
+
+.df {
+  display: flex;
+}
+
+.jc {
+  justify-content: center;
+}
+
+.jsb {
+  justify-content: space-between;
+}
+
+.jse {
+  justify-content: flex-end;
+}
+
+.ac {
+  align-items: center;
+}
