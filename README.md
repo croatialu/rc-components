@@ -9,7 +9,7 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:6666
+# serve with hot reload at localhost:9998
 npm start
 
 # build for production with minification
