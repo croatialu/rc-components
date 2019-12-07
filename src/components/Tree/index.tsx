@@ -170,23 +170,3 @@ export const Tree: React.FC<TreeProps> = ({ value = [], options, onChange, expan
     </div>
   );
 };
-
-// @ts-ignore
-Tree.propsOptions = {
-  type: {
-    label: "按钮的风格",
-    type: "enum",
-    default: "primary",
-    enum: ["primary", "default"]
-  },
-  disabled: {
-    label: "是否禁用",
-    type: "boolean",
-    default: false
-  },
-  children: {
-    label: "按钮文字",
-    type: "string",
-    default: "按钮"
-  }
-};
