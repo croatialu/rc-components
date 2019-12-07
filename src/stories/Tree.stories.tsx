@@ -4,8 +4,6 @@ import { Option } from "../components/Tree/interface";
 import story from "../../.storybook/story";
 
 import { action } from "@storybook/addon-actions";
-import WithKnobs from "../../.storybook/WithKnobs";
-
 
 export const options: Option[] = [
   {
@@ -115,13 +113,11 @@ export const options: Option[] = [
   }
 ];
 
-
-const TreeWithKnobs = WithKnobs(Tree);
 story("Tree")
 .add("default", () => (
-  <TreeWithKnobs value={[]} options={options} onChange={action('Tree - onChange')}/>
+  <Tree value={[]} options={options} onChange={action('Tree - onChange')}/>
 ))
 .add("value", () => (
-  <TreeWithKnobs value={['tag1']} options={options} onChange={action('Tree - onChange')}/>
+  <Tree value={['tag1']} options={options} onChange={action('Tree - onChange')}/>
 ))
 ;
