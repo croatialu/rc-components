@@ -1,0 +1,23 @@
+.rc-tree {
+
+  .option-item {
+    cursor: pointer;
+  }
+
+  .option-item .label-text {
+    transition: background-color .3s;
+  }
+
+  .option-item:hover .label-text {
+    background-color: #1890ff;
+    color: #fff;
+  }
+
+  .option-folder-title {
+    cursor: pointer;
+  }
+  .option-folder-title:hover {
+    background-color: #1890ff;
+    color: #fff;
+  }
+}
