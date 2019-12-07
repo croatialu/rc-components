@@ -1,0 +1,37 @@
+{
+  "id": "1550711",
+  "name": "rc-components",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "722175",
+      "name": "radio-active",
+      "font_class": "radioactive",
+      "unicode": "e75f",
+      "unicode_decimal": 59231
+    },
+    {
+      "icon_id": "736604",
+      "name": "check-box-outline-blank",
+      "font_class": "checkboxoutlineblank",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "737961",
+      "name": "radio",
+      "font_class": "radio",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "1410255",
+      "name": "check-box",
+      "font_class": "check-box",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    }
+  ]
+}
