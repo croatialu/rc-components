@@ -1,17 +1,16 @@
 import * as React from "react";
-import Button from '../components/button'
-import story from '../../.storybook/story';
+import { Button } from "../components/Button";
+import story from "../../.storybook/story";
 
-import { action } from '@storybook/addon-actions'
-import WithKnobs from '../../.storybook/WithKnobs';
-// story('Button')
-//   .add('default - 默认', () => <Button /> )
-//   .add('primary - 主按钮', () => <Button  /> )
-//   .add('disabled - 禁用', () => <Button /> )
-//   .add('variable button', () => <WithComponent />)
-const ButtonWithKnobs = WithKnobs(Button);
+import { action } from "@storybook/addon-actions";
+
 story("Button")
-  .add("primary", () => <ButtonWithKnobs  type='primary' onClick={action('primary click')}></ButtonWithKnobs>)
-  .add("default", () => <ButtonWithKnobs type='default' onClick={action('default click')} ></ButtonWithKnobs>)
-  .add("disabled", () => <ButtonWithKnobs disabled onClick={action('disabled click')}></ButtonWithKnobs>)
-  .add("variable button", () => <ButtonWithKnobs hasKnobs onClick={action('variable click')}></ButtonWithKnobs>, { notes: '23333' });
+  .add("primary", () => (
+    <Button type="primary" onClick={action("primary click")}>按钮</Button>
+  ))
+  .add("default", () => (
+    <Button type="default" onClick={action("default click")}>按钮</Button>
+  ))
+  .add("disabled", () => (
+    <Button disabled onClick={action("disabled click")}>按钮</Button>
+  ));

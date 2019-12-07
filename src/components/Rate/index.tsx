@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { RateProps } from './interface'
 
-import "./ARate.scss";
+import "./style.scss";
 
 function Icon({
   width = "20px",
@@ -24,22 +25,15 @@ function Icon({
   );
 }
 
-export interface ARateProps {
-  value?: number;
-  count?: number;
-  allowHalf?: boolean;
-  allowClear?: boolean;
-  disabled?: boolean;
-  onChange?: (value: number) => void;
-}
-const ARate = (ARateProps: ARateProps) => {
+
+export const Rate = (RateProps: RateProps) => {
   const {
     value: inputValue = 0,
     count = 5,
     allowHalf = false,
     allowClear = true,
     disabled = false
-  } = ARateProps;
+  } = RateProps;
 
   const [lastValue, setLastValue] = useState(inputValue);
   const [value, setValue] = useState(inputValue);
@@ -117,38 +111,3 @@ const ARate = (ARateProps: ARateProps) => {
     </div>
   );
 };
-
-ARate.propsOptions = {
-  value: {
-    label: "当前数，受控值",
-    type: "number",
-    default: 0
-  },
-  count: {
-    label: "star 总数",
-    type: "number",
-    default: 5
-  },
-  allowHalf: {
-    label: "是否允许半选",
-    type: "boolean",
-    default: false
-  },
-  allowClear: {
-    label: "是否允许再次点击后清除",
-    type: "boolean",
-    default: true
-  },
-  disabled: {
-    label: "只读，无法进行交互",
-    type: "boolean",
-    default: false
-  },
-  onChange: {
-    label: "选择时的回调",
-    type: "function",
-    default: () => {}
-  }
-};
-
-export default ARate;
