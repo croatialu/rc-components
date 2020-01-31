@@ -1,5 +1,5 @@
-import * as React from "react";
-import { Radio } from "../components/Radio";
+import React from "react";
+import { Radio } from "@src/components/Radio";
 import story from "../../.storybook/story";
 
 story("Radio")

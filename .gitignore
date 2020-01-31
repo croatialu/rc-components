@@ -2,6 +2,8 @@ node_modules/
 dist/
 npm-debug.log
 yarn-error.log
+storybook-static
+.storybook/build
 
 # Editor directories and files
 .idea

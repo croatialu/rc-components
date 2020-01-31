@@ -1,5 +1,5 @@
-import * as React from "react";
-import { Button } from "../components/Button";
+import React from "react";
+import { Button } from "@src/components/Button";
 import story from "../../.storybook/story";
 
 import { action } from "@storybook/addon-actions";

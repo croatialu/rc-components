@@ -1,5 +1,5 @@
 import React from "react";
-import { Rate } from "../components/Rate";
+import { Rate } from "@src/components/Rate";
 import story from "../../.storybook/story";
 import { action } from "@storybook/addon-actions";
 

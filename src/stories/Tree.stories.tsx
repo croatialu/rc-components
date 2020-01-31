@@ -1,6 +1,6 @@
-import * as React from "react";
-import { Tree } from "../components/Tree";
-import { Option } from "../components/Tree/interface";
+import React from "react";
+import { Tree } from "@src/components/Tree";
+import { Option } from "@src/components/Tree/interface";
 import story from "../../.storybook/story";
 
 import { action } from "@storybook/addon-actions";

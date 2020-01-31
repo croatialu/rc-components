@@ -1,5 +1,5 @@
-import * as React from "react";
-import { Checkbox } from "../components/Checkbox";
+import React from "react";
+import { Checkbox } from "@src/components/Checkbox";
 import story from "../../.storybook/story";
 
 story("Checkbox")

@@ -13,7 +13,7 @@ module.exports = ({ config, mode }) => {
   config.resolve.extensions.push(".ts", ".tsx");
 
   config.resolve.alias["@rootDir"] = path.resolve(__dirname, "../");
+  config.resolve.alias["@src"] = path.resolve(__dirname, "../src");
 
-  console.log(config.resolve.alias, 'alias')
   return config;
 };
