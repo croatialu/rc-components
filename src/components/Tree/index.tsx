@@ -162,6 +162,7 @@ export const Tree: React.FC<TreeProps> = ({ value = [], options, onChange, expan
   return (
     <div className="rc-tree">
       <input type="text" value={inputText} onChange={(event) => setInputText(event.target.value)}/>
+      123
       <br/>
       <br/>
       {options.map(v => {
