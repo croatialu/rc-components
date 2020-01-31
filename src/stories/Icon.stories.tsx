@@ -1,5 +1,5 @@
-import * as React from "react";
-import { Icon } from "../components/Icon";
+import React from "react";
+import { Icon } from "@src/components/Icon";
 import story from "../../.storybook/story";
 
 story("Icon")
